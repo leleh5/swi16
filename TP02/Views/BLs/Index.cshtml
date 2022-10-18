@@ -1,0 +1,45 @@
+﻿@model IEnumerable<TP02.Models.BL>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Índice BL</h2>
+
+<p>
+    @Html.ActionLink("Add", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Numero)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Consignee)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Navio)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Numero)
+        </td>       
+        <td>
+            @Html.DisplayFor(modelItem => item.Consignee)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Navio)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Numero }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Numero }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Numero })
+        </td>
+    </tr>
+}
+
+</table>

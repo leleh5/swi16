@@ -1,0 +1,47 @@
+﻿@model TP02.Models.Container
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Deletar cadastro de container</h2>
+
+<h3>Tem certeza que deseja excluir o cadastro?</h3>
+<div>
+    <h4>Container</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Numero)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Numero)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Tipo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Tipo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Tamanho)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Tamanho)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Home", "Index")
+        </div>
+    }
+</div>
