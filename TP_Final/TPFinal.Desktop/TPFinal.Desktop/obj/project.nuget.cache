@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "gLFf/jiiLQVrCNFJkHEWEf2b30J6NKDxALT9GKVdxCWns2dWZEQbqutGEr26g6R3TO7EvwJJGQaDLpBTRf6lqA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\MatheusHenriquePalin\\Documents\\Faculdade\\Leticia\\TP_Final\\TPFinal.Desktop\\TPFinal.Desktop\\TPFinal.Desktop.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\MatheusHenriquePalin\\.nuget\\packages\\newtonsoft.json\\13.0.2\\newtonsoft.json.13.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}
